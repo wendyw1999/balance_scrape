@@ -27,8 +27,9 @@ def main():
         try:
             info_list = scrape(companies[company],companies_transformed[company],company+1)
             result_df.loc[len(result_df)] = info_list
-            result_df.to_csv("/data/result_company_info.csv")
+            result_df.to_csv("/data/company_info_1_500.csv")
         except:
             print("Needs to look into:"+companies[company])
+    
         
     
