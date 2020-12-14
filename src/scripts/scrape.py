@@ -10,7 +10,20 @@ import time
 from datetime import date
 import random
 
-
+def initialize_driver(url):
+    driver = webdriver.Chrome()
+    driver.get(url)
+    return driver
+def kill_driver(driver):
+    driver.quit()
+    return True
+def change_url(driver,new_url):
+    driver.get(new_url)
+    return driver
+def search_by_xpath(driver,xpath):
+    lists = driver.find_elements_by_xpath(xpath)
+    return lists
+    
 def initialize(company_name_actual,company_name):
     driver = webdriver.Chrome()
     url = "https://craft.co/search?layout=list&order=relevance&q=curr_search&locations%5B0%5D=US"
