@@ -1,4 +1,3 @@
-re
 selenium
 xlsxwriter
 ethnicolr
@@ -6,8 +5,5 @@ gender_guesser
 numpy
 pandas
 requests
-import re
-time
-contextlib
-random
-
+extcolors
+gspread

@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import string
 import re
-
+import urllib.request
+import urllib
 import xlsxwriter
 import ethnicolr
 import pandas as pd
@@ -16,6 +17,7 @@ import time
 from google.oauth2.service_account import Credentials
 import gspread
 from keras.models import load_model
+import extcolors
 
 ## download images
 def download_image_from_url(url,folder_location,name):
